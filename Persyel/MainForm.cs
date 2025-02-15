@@ -67,7 +67,7 @@ namespace Persyel
 			switch (sender)
 			{
 				case TextBox textBox: SetStatusbarText(text: textBox.AccessibleDescription); break;
-				case Button button: SetStatusbarText(text: button.AccessibleDescription); break;
+				case Button button: SetStatusbarText(text: button.Tag.ToString()); break;
 				case RadioButton radioButton: SetStatusbarText(text: radioButton.AccessibleDescription); break;
 				case CheckBox checkBox: SetStatusbarText(text: checkBox.AccessibleDescription); break;
 				case DateTimePicker dateTimePicker: SetStatusbarText(text: dateTimePicker.AccessibleDescription); break;
@@ -135,7 +135,7 @@ namespace Persyel
 		{
 		}
 
-		private void Button006_Click(object sender, EventArgs e)
+		private void ButtonElement006_Click(object sender, EventArgs e)
 		{
 		}
 
